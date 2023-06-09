@@ -13,4 +13,4 @@ export function classNames(
             .map(([className]) => className), //массив классов
     ].join(' ');
 }
-// classNames( 'remove-btn', {hovered: false, red: true, ['pdg']})
+// classNames( 'remove-btn', {hovered: false, red: true}, ['pdg']})
