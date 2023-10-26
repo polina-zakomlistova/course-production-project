@@ -7,13 +7,12 @@ import { initReactI18next } from 'react-i18next';
 // '../public/locales/en/translation.json'
 // which is the default for the xhr backend to load from
 
-i18n.use(detector)
-    .use(backend)
+i18n.use(backend)
+    .use(detector)
     .use(initReactI18next)
     .init({
-        fallbackLng: 'ru',
+        fallbackLng: 'en',
         debug: __IS_DEV__,
-        keySeparator: false,
         interpolation: {
             escapeValue: false, // react already safes from xss
         },
