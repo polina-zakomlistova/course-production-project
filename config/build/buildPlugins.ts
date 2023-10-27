@@ -24,7 +24,7 @@ export function buildPlugins({ paths, isDev }: BuildOptions): webpack.WebpackPlu
         pluggins.push(new webpack.HotModuleReplacementPlugin());
         pluggins.push(new BundleAnalyzerPlugin({
             openAnalyzer: false,
-        }));
+        }))
     }
 
     return pluggins;
