@@ -1,20 +1,19 @@
 import i18n from 'i18next';
-import detector from 'i18next-browser-languagedetector';
-import backend from 'i18next-http-backend';
 import { initReactI18next } from 'react-i18next';
 
-// translations are already at
-// '../public/locales/en/translation.json'
-// which is the default for the xhr backend to load from
+import Backend from 'i18next-http-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
 
-i18n.use(backend)
-    .use(detector)
+i18n
+    .use(Backend)
+    .use(LanguageDetector)
     .use(initReactI18next)
     .init({
         fallbackLng: 'en',
         debug: __IS_DEV__,
+
         interpolation: {
-            escapeValue: false, // react already safes from xss
+            escapeValue: false, // not needed for react as it escapes by default
         },
 
         backend: {
