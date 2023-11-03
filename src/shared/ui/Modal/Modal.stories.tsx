@@ -5,7 +5,6 @@ import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDeco
 import { Theme } from 'app/providers/ThemeProvider';
 import { Modal } from './Modal';
 
-
 export default {
     title: 'shared/Modal',
     component: Modal,

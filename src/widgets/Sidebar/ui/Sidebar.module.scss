@@ -18,44 +18,47 @@
     margin-left: 20px;
 }
 
-
-
-.collapseBtn{
+.collapseBtn {
     position: absolute;
     right: -32px;
     bottom: 32px;
 }
-.items{
+
+.items {
     margin-top: 20px;
     margin-left: 20px;
     display: flex;
     flex-direction: column;
 }
+
 .link {
     opacity: 1;
     margin-left: 10px;
 }
 
-.item{
+.item {
     margin-top: 10px;
     display: flex;
     align-items: center;
 }
 
-.icon{
+.icon {
     fill: var(--inverted-primary-color);
 }
+
 .collapsed {
     width: var(--sidebar-width-collapsed);
 
-    .switchers{
+    .switchers {
         flex-direction: column;
         justify-content: center;
     }
+
     .lang {
         margin-left: 0;
     }
-    .link{
+
+    .link {
         opacity: 0;
         width: 0;
         transition: 0.3s opacity;
