@@ -2,7 +2,6 @@ import { classNames } from 'shared/lib/classNames/classNames';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useDispatch, useSelector } from 'react-redux';
 import { counterActions } from '../model/slice/CounterSlice';
-import cls from './Counter.module.scss';
 import { getCounterValue } from '../model/selectors/getCounterValue/getCounterValue';
 
 interface CounterProps {
@@ -21,7 +20,7 @@ export const Counter = (props: CounterProps) => {
         dispatch(counterActions.decrement());
     };
     return (
-        <div className={classNames(cls.Counter, {}, [className])}>
+        <div className={classNames('', {}, [className])}>
             <h3 data-testid="value-title">
                 {counterValue}
             </h3>
