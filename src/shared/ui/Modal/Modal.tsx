@@ -56,7 +56,9 @@ export const Modal = (props: ModalProps) => {
     }, [onCloseHandler]);
 
     useEffect(() => {
-        window.addEventListener('keydown', onKeyDown);
+        if (isOpen) {
+            window.addEventListener('keydown', onKeyDown);
+        }
         return () => {
             clearTimeout(timerRef.current);
             window.removeEventListener('keydown', onKeyDown);
@@ -79,7 +81,6 @@ export const Modal = (props: ModalProps) => {
                     <div className={cls.content} onClick={contentClickHandler}>
                         {children}
                     </div>
-
                 </div>
             </div>
         </Portal>

@@ -13,6 +13,9 @@
   "О сайте": "About us",
   "Переключить": "Toggle",
   "Войти": "Log in",
+  "Выйти": "Log out",
   "username": "username",
-  "password": "password"
+  "password": "password",
+  "Форма авторизации": "Authorization form",
+  "Вы ввели неправильный пароль или логин": "Uncorrected username or password"
 }
