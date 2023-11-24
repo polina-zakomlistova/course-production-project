@@ -1,6 +1,6 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
-import React, { useCallback, useState } from 'react';
+import React, { memo, useCallback, useState } from 'react';
 import { Modal } from 'shared/ui/Modal/Modal';
 import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { LoginModal } from 'features/AuthByUsername';
@@ -12,7 +12,7 @@ interface NavbarProps {
     className?: string;
 }
 
-export const Navbar = ({ className }: NavbarProps) => {
+export const Navbar = memo(({ className }: NavbarProps) => {
     const { t } = useTranslation();
     const dispatch = useDispatch();
     const [isOpenAuthModal, setIsOpenAuthModal] = useState(false);
@@ -48,4 +48,4 @@ export const Navbar = ({ className }: NavbarProps) => {
             {isOpenAuthModal && <LoginModal isOpen={isOpenAuthModal} onClose={onCloseModal} />}
         </div>
     );
-};
+});

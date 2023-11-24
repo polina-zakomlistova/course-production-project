@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Полина",
+    "lastname": "Закомлистова",
+    "age": 25,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Tomsk",
+    "username": "admin",
+    "avatar": "https://kartinki.pibig.info/uploads/posts/2023-04/1680707245_kartinki-pibig-info-p-kot-programmist-kartinka-arti-4.jpg"
+  }
 }
