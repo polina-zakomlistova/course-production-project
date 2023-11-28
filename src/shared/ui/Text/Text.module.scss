@@ -6,6 +6,18 @@
     font: var(--font-m);
 }
 
+.right {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.center {
+    text-align: center;
+}
+
 .primary {
     .title {
         color: var(--primary-color);
